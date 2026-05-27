@@ -4,6 +4,44 @@
             "path": "."
         }
     ],
-    "settings": {},
-    "extensions": {}
+    "settings": {
+        "terminal.integrated.shellIntegration.enabled": true,
+
+        "clangd.arguments": [
+            "--header-insertion=never"
+        ],
+
+        "files.autoGuessEncoding": true,
+
+        "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+
+        "C_Cpp.errorSquiggles": "disabled",
+
+        "files.associations": {
+            ".eideignore": "ignore",
+            "*.a51": "a51",
+            "*.h": "c",
+            "*.c": "c",
+            "*.hxx": "cpp",
+            "*.hpp": "cpp",
+            "*.c++": "cpp",
+            "*.cpp": "cpp",
+            "*.cxx": "cpp",
+            "*.cc": "cpp"
+        },
+
+        "[yaml]": {
+            "editor.insertSpaces": true,
+            "editor.tabSize": 4,
+            "editor.autoIndent": "advanced"
+        }
+    },
+
+    "extensions": {
+        "recommendations": [
+            "llvm-vs-code-extensions.vscode-clangd",
+            "ms-vscode.cpptools",
+            "ms-vscode.makefile-tools"
+        ]
+    }
 }
